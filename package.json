@@ -1,0 +1,32 @@
+{
+  "name": "duration-to-ms",
+  "version": "0.0.1",
+  "description": "Library for converting duration to ms",
+  "main": "src/index.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha -r esm tests/**/*.spec.js",
+    "lint": "eslint **/*.js",
+    "preversion": "npm run lint",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmytryS/duration-to-ms.git"
+  },
+  "author": "Dmytro Shvaika",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DmytryS/duration-to-ms/issues"
+  },
+  "homepage": "https://github.com/DmytryS/duration-to-ms#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.7.2",
+    "esm": "^3.2.25",
+    "mocha": "^6.2.2"
+  }
+}
