@@ -16,7 +16,8 @@ const PERIOD = {
   y: YEAR
 }
 
-export default (duration) => duration.match(/[0-9]+(ms|[smhdwy])/g)
+export default (duration) => duration
+  .match(/[0-9]+(ms|[smhdwy])/g)
   .reduce(
     (acc, value) => acc += value.replace(/(ms|[smhdwy])/g, '') * PERIOD[value.slice(-1)],
     0,

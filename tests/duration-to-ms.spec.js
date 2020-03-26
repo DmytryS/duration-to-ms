@@ -1,4 +1,4 @@
-import 'chai/register-should'
+import 'chai/register-should.js'
 import durationToMs from '../src/index.js'
 
 describe('ms(string)', () => {
