@@ -3,7 +3,7 @@
 [![MIT License][license-image]][license-url]
 [![Build Status][travis-image]][travis-url]
 
-A JavaScript library converting duration string into milliseconds.
+A JavaScript library for converting duration string into milliseconds.
 
 Example:
 ```javascript
