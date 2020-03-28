@@ -1,6 +1,6 @@
 {
   "name": "duration-to-ms",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Library for converting duration to ms",
   "main": "src/index.js",
   "type": "module",
