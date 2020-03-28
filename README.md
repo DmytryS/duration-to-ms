@@ -22,5 +22,5 @@ Example:
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 
-[travis-url]: https://travis-ci.org/DmytryS/duration-to-ms
+[travis-url]: https://travis-ci.com/DmytryS/duration-to-ms
 [travis-image]: https://img.shields.io/travis/DmytryS/duration-to-ms/master.svg?style=flat
