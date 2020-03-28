@@ -23,4 +23,4 @@ Example:
 [license-url]: LICENSE
 
 [travis-url]: https://travis-ci.com/DmytryS/duration-to-ms
-[travis-image]: https://img.shields.io/travis/DmytryS/duration-to-ms/master.svg?style=flat
+[travis-image]: https://travis-ci.com/DmytryS/duration-to-ms.svg?branch=master
