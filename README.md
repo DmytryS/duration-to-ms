@@ -14,6 +14,16 @@ Example:
   durationToMs(SESSION_DURATION)
 ```
 
+```
+  ms: millisecond
+  s: second
+  m: minute
+  h: hour
+  d: day
+  w: week
+  y: year
+```
+
 [npm-url]: https://npmjs.org/package/duration-to-ms
 [npm-version-image]: https://img.shields.io/npm/v/duration-to-ms.svg?style=flat
 [npm-downloads-image]: https://img.shields.io/npm/dm/duration-to-ms.svg?style=flat
