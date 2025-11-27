@@ -13,7 +13,7 @@ const PERIOD = {
   h: HOUR,
   d: DAY,
   w: WEEK,
-  y: YEAR
+  y: YEAR,
 }
 
 export default (duration) => duration

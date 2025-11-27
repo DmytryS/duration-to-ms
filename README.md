@@ -1,7 +1,6 @@
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][downloads-url]
 [![MIT License][license-image]][license-url]
-[![Build Status][travis-image]][travis-url]
 
 A JavaScript library for converting duration string into milliseconds.
 
@@ -9,9 +8,9 @@ Example:
 ```javascript
   import durationToMs from 'duration-to-ms'
 
-  const DURATION = '24h'
+  const DURATION = '24h' // 1d 1h5m
 
-  durationToMs(SESSION_DURATION)
+  durationToMs(DURATION)
 ```
 
 ```
