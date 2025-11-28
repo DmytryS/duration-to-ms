@@ -5,11 +5,18 @@
   "directories": {
     "test": "tests"
   },
-  "type": "module",
   "main": "dist/src/index.js",
   "module": "dist/esm/index.js",
   "esnext": "dist/esnext/index.js",
   "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "require": "./dist/src/index.js",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/src/index.js"
+    }
+  },
   "browser": {
     "./src/index.ts": "./src/index-browser.ts",
     "./dist/esm/index.js": "./dist/esm/index-browser.js",
