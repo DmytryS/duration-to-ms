@@ -1,6 +1,6 @@
 {
   "name": "duration-to-ms",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Library for converting duration string to ms",
   "directories": {
     "test": "tests"
