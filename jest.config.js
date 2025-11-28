@@ -14,4 +14,3 @@ export default {
   testTimeout: 15000,
   moduleNameMapper: {},
 }
-  
