@@ -2,10 +2,19 @@
   "name": "duration-to-ms",
   "version": "0.1.5",
   "description": "Library for converting duration string to ms",
-  "main": "src/index.js",
-  "type": "module",
   "directories": {
     "test": "tests"
+  },
+  "type": "module",
+  "main": "dist/src/index.js",
+  "module": "dist/esm/index.js",
+  "esnext": "dist/esnext/index.js",
+  "types": "dist/src/index.d.ts",
+  "browser": {
+    "./src/index.ts": "./src/index-browser.ts",
+    "./dist/esm/index.js": "./dist/esm/index-browser.js",
+    "./dist/esnext/index.js": "./dist/esnext/index-browser.js",
+    "./dist/src/index.js": "./dist/src/index-browser.js"
   },
   "keywords": [
     "time",
@@ -16,9 +25,10 @@
     "parse"
   ],
   "scripts": {
-    "test": "mocha --experimental-modules tests/**/*.spec.js",
+    "test": "jest",
     "lint": "eslint **/*.js",
-    "preversion": "npm run lint && npm test",
+    "build": "rm -rf dist tsconfig.tsbuildinfo && tsc --build tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
+    "preversion": "npm run lint && npm run build && npm test",
     "postversion": "git push && git push --tags"
   },
   "repository": {
@@ -32,8 +42,9 @@
   },
   "homepage": "https://github.com/DmytryS/duration-to-ms#readme",
   "devDependencies": {
-    "chai": "^6.2.1",
+    "@types/jest": "^30.0.0",
     "eslint": "^9.39.1",
-    "mocha": "^11.7.5"
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.9.3"
   }
 }

@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "composite": true,
+  "files": [],
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "typedocOptions": {
+    "out": "docs",
+    "exclude": [
+      "**/dist/**",
+      "**/build/**",
+      "**/node_modules/**",
+      "**/*.spec.ts"
+    ],
+    "name": "Duration to MS",
+    "excludePrivate": true
+  },
+  "references": []
+}
